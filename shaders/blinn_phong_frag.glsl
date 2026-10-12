@@ -1,5 +1,8 @@
 #version 330 core
 
+// Claude AI: skeleton provided by AI (inputs, uniforms, structure and the diffuse line).
+// I filled in the L, V and H vectors, the specular dot product and the specular term of the formula.
+
 in vec3 vWorldPos;
 in vec3 vNormal;
 

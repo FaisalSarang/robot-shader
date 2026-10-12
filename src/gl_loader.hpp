@@ -72,6 +72,7 @@ CS6983_GL_FUNC(void, glUseProgram, GLuint);
 CS6983_GL_FUNC(GLint, glGetUniformLocation, GLuint, const GLchar*);
 CS6983_GL_FUNC(void, glUniformMatrix4fv, GLint, GLsizei, GLboolean, const GLfloat*);
 CS6983_GL_FUNC(void, glUniform3f, GLint, GLfloat, GLfloat, GLfloat);
+// Assignment 2: added by me with guidance from Claude AI (the matching CS6983_LOAD lines were added by Claude AI)
 CS6983_GL_FUNC(void, glUniformMatrix3fv, GLint, GLsizei, GLboolean, const GLfloat*);
 CS6983_GL_FUNC(void, glUniform1f, GLint, GLfloat);
 

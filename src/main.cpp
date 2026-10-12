@@ -1,5 +1,9 @@
 // CS 6983 Module 2 Week 3
 // Sample OpenGL Program
+//
+// AI usage: changes for Assignment 2 were made with help from Claude (Anthropic).
+// Each AI-written or AI-assisted section is marked with a "Claude AI" comment.
+// See the "AI Usage" section of README.md for a summary.
 
 #include "gl_loader.hpp"
 
@@ -34,6 +38,7 @@ static App gApp;
 static GLuint gProgram = 0;
 static GLint gMvpLoc = -1;
 static GLint gColorLoc = -1;
+// Claude AI: written by AI
 static GLuint gLitProgram = 0;      // Blinn-Phong shaders
 static GLuint gArmVao = 0;          // the uploaded robot arm
 static GLuint gArmVertexCount = 0;  // how many corners to draw
@@ -128,6 +133,7 @@ static GLuint upload_positions(const std::vector<float>& positions) {
 }
 
 
+// Claude AI: code provided by AI, I filled in the stride, normal offset and attribute slot
 // each corner is 6 floats: x y z nx ny nz
 static GLuint upload_positions_normals(const std::vector<float>& data) {
     GLuint vao = 0;
@@ -148,7 +154,8 @@ static GLuint upload_positions_normals(const std::vector<float>& data) {
     return vao;
 }
 
-
+// Claude AI: code provided by AI, I filled in reading the normals, the 1-based index fix
+// and the floats-per-corner count
 static GLuint load_obj(const std::string& path, GLuint& vertexCount) {
     std::ifstream in(path);
     if (!in) {
@@ -237,6 +244,8 @@ static glm::mat4 model_matrix(const glm::vec3& position, float radians, const gl
 // Camera
 // ###########################################################################################
 
+// Claude AI: camera target, eye_position() and the larger distance/far-plane values
+// were changed by AI to fit the taller robot arm model
 // camera orbits this point, about halfway up the arm
 const glm::vec3 CAMERA_TARGET(0.0f, 2.0f, 0.0f);
 
@@ -276,6 +285,7 @@ static glm::mat4 projection_matrix() {
 // Scene
 // ###########################################################################################
 
+// Claude AI: written by AI (switching programs and sending the Blinn-Phong uniforms)
 static void draw_scene(float time) {
     const glm::mat4 view = view_matrix();
     const glm::mat4 projection = projection_matrix();
@@ -425,6 +435,7 @@ int main() {
         return 1;
     }
 
+    // Claude AI: written by AI (fixed starter shader file names, load Blinn-Phong shaders and OBJ)
     // link the shaders and load the model
     try {
         // unlit shaders for the grid (the starter pointed at color_*.glsl, which don't exist)

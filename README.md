@@ -48,6 +48,20 @@ AI usage must be clearly documented in your code. AI may not be used to write th
 
 *Sharing code is not allowed, but ideas may be discussed. Your submitted work must be your own.
 
+## AI Usage
+
+I used Claude (Anthropic) as a step-by-step tutor and coding assistant. AI-written or AI-assisted code is also marked with "Claude AI" comments in the source files.
+
+| Part | How AI was used |
+|---|---|
+| Blender model and OBJ export | Built by me, following step-by-step instructions from Claude AI |
+| `shaders/blinn_phong_vert.glsl` | Written by me, with explanations, a skeleton for `main()` and corrections from Claude AI |
+| `shaders/blinn_phong_frag.glsl` | Skeleton provided by Claude AI; I filled in the L, V, H vectors, the specular dot product and the specular term |
+| `upload_positions_normals` and `load_obj` in `src/main.cpp` | Written by Claude AI with blanks that I filled in |
+| `src/gl_loader.hpp` additions | Function declarations added by me, matching load lines added by Claude AI |
+| Rest of the `src/main.cpp` changes (globals, shader and model loading, camera, `draw_scene` uniforms, removing the cube code) | Written by Claude AI |
+| README project sections (files, build instructions) | Written by Claude AI |
+
 ## Reflection
 
 ### 1. What was the most difficult portion of this project and how did you overcome it?
