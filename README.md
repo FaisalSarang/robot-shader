@@ -42,12 +42,6 @@ cmake --build build
 
 Controls: drag or arrow keys to orbit, scroll or `-` / `=` to zoom, Esc to quit.
 
-## AI Policy
-
-AI usage must be clearly documented in your code. AI may not be used to write the reflection portion. Please attempt on your own before consulting AI. AI should be used as a tool to assist your learning, not create the whole project for you.
-
-*Sharing code is not allowed, but ideas may be discussed. Your submitted work must be your own.
-
 ## AI Usage
 
 I used Claude (Anthropic) as a step-by-step tutor and coding assistant. AI-written or AI-assisted code is also marked with "Claude AI" comments in the source files.
