@@ -49,7 +49,7 @@ I used Claude (Anthropic) as a step-by-step tutor and coding assistant. AI-writt
 | Part | How AI was used |
 |---|---|
 | Blender model and OBJ export | Built by me, following step-by-step instructions from Claude AI |
-| `shaders/blinn_phong_vert.glsl` | Written by me, with explanations, a skeleton for `main()` and corrections from Claude AI |
+| `shaders/blinn_phong_vert.glsl` | Written by me, with a skeleton for `main()` and corrections from Claude AI |
 | `shaders/blinn_phong_frag.glsl` | Skeleton provided by Claude AI; I filled in the L, V, H vectors, the specular dot product and the specular term |
 | `upload_positions_normals` and `load_obj` in `src/main.cpp` | Written by Claude AI with blanks that I filled in |
 | `src/gl_loader.hpp` additions | Function declarations added by me, matching load lines added by Claude AI |
