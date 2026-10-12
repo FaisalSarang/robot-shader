@@ -42,6 +42,12 @@ cmake --build build
 
 Controls: drag or arrow keys to orbit, scroll or `-` / `=` to zoom, Esc to quit.
 
+## AI Policy
+
+AI usage must be clearly documented in your code. AI may not be used to write the reflection portion. Please attempt on your own before consulting AI. AI should be used as a tool to assist your learning, not create the whole project for you.
+
+*Sharing code is not allowed, but ideas may be discussed. Your submitted work must be your own.
+
 ## Reflection
 
 ### 1. What was the most difficult portion of this project and how did you overcome it?
